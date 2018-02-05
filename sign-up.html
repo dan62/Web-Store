@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sign-Up</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet" type="text/css">
+    <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0px;
+   width: 100%;
+   background-color:#1a1a1a;
+   color: white;
+   text-align: center;
+}
+    #sign-up {
+	position: absolute;
+	left: 218px;
+	top: 129px;
+	width: 425px;
+	height: 434px;
+	z-index: 1;
+	background-color: #1a1a1a;
+}
+    #video-div {
+	position: absolute;
+	left: 643px;
+	top: 128px;
+	width: 449px;
+	height: 435px;
+	z-index: 2;
+}
+#banner video{
+  position: absolute;
+  width: 449px !important;
+  height: 600px !important;
+  background-size: cover;
+  transition: 1s opacity;
+  z-index:-1;
+}  
+.signup_button {background-color:#63C; border:hidden;font-size:18px; color:white;} /* Blue */
+    </style>
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  
+  </head>
+
+  <body>
+   
+  <!-- Navigation -->
+    
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <img src="images/logo.png" height="40px" width="40px"><a class="navbar-brand" href="#">&nbsp;Next-Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Home
+                <span class="sr-only"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.php">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.php">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+ <div id="sign-up"><h2 style="color:#FFF; text-align:center;padding-top:5px;">Sign-Up Now</h2><p style="padding:30px;padding-top:10px;color:#FFF;">fill in all the details below correctly, follow example data in text boxes to pass verification</p><form action="register.php" name="Form1" method="POST" style="text-align:center;">
+        <p id="error" style="color:red"></p>
+        <input name="fname" id="fname" type="text" placeholder="First Name" size="30" style="margin-bottom:10px;" onblur="ordinaryValidation1()">
+        <input name="lname" type="text" placeholder="Last Name" size="30" style="margin-bottom:10px;" onblur="ordinaryValidation2()">
+        <input name="email" type="email" placeholder="Email Address" size="30" style="margin-bottom:10px;" onblur="emailValidation()">
+        <input name="password1" type="password" placeholder="Password" size="30" style="margin-bottom:10px;" onblur="ordinaryValidation3()">
+        <input name="password2" type="password" placeholder="Retype-Password" size="30" style="margin-bottom:10px;" onblur="checkPass()"><br>
+    <button class="signup_button">Sign-UP</button>
+    </form></div>
+    <div id="video-div"><video autoplay loop id="banner" width="449px;" height="257px">
+  <source src="images/clothes.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video></div>
+    <div id="video-div"><video autoplay loop id="banner" width="449px;" height="620px">
+  <source src="images/sign-up.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video></div>
+
+  <!-- Footer -->
+<div class="footer">
+  <p>Copyright &copy; Next-Store <script>document.write(new Date().getFullYear())</script></p>
+</div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="js/index-js.js"></script>
+	<script src="js/register_validation.js"></script>
+    
+	
+ 
+</body>
+
+</html>

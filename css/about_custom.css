@@ -1,0 +1,49 @@
+ #about-image {
+	position:absolute;
+	left: 29px;
+	top: 124px;
+	width: 701px;
+	height: 307px;
+	z-index: 1;
+}
+    #about-text {
+	position:absolute;
+	left: 787px;
+	top: 131px;
+	width: 374px;
+	height: 429px;
+	z-index: 2;
+}
+    #Effortless decription {
+	position:absolute;
+	width: 683px;
+	height: 364px;
+	z-index: 1;
+	left: 0px;
+	top: 515px;
+}
+    #pay-easy {
+	position: absolute;
+	left: 86px;
+	top: 640px;
+	width: 470px;
+	height: 414px;
+	z-index: 2;
+}
+    #payment-image {
+	position: absolute;
+	left: 756px;
+	top: 637px;
+	width: 469px;
+	height: 409px;
+	z-index: 3;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0px;
+   width: 100%;
+   background-color:#1a1a1a;
+   color: white;
+   text-align: center;
+}
